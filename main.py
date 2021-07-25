@@ -1,7 +1,7 @@
 import pyttsx3
 import PyPDF2
 book = open('The_monk_who_sold_his_car.pdf', 'rb')
-pdfReader = PyPDF2.PdfFileReader(book, strict=False)
+pdfReader = PyPDF2.PdfFileReader(book)
 pages = pdfReader.numPages
 print(pages)
 speaker = pyttsx3.init()
